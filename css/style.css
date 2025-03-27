@@ -1,0 +1,139 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.perfil-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #666;
+}
+
+.nome {
+    margin: 10px 0;
+    color: #333;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #666;
+}
+
+.botao {
+    background-color: #8800bac9;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #730054c1;
+} */
+
+/* Variáveis CSS para facilitar ajustes */
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333;
+    --cor-botao: #8800bac9;
+    --cor-botao-hover: #730054c1;
+    --cor-borda: #4d4b4b;
+    --sombra-card: 8px 8px 20px rgba(0, 0, 0, 0.2);
+    --gradiente-botao: linear-gradient(135deg, #8800bac9, #730054c1);
+    --fonte-principal: 'Arial', sans-serif;
+    --fonte-destaque: 'Georgia', serif;
+}
+
+/* Corpo da página com centralização e fonte padrão */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+}
+
+/* Estilo do card */
+.card {
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);;
+    border: 2px solid var(--cor-borda);
+    transition: all 0.3s ease;
+}
+
+/* Efeito de "saltar" ao passar o mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.3);
+    border-color: #8800bac9;
+}
+
+/* Imagem de perfil com borda arredondada */
+.perfil-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #4d4b4b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de ampliação na imagem ao passar o mouse */
+.perfil-img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    transition: transform 0.3s ease; /* Suaviza o efeito */
+}
+
+/* Título do card com fonte de destaque */
+.nome {
+    margin: 10px 0;
+    font-size: 24px;
+    color: var(--cor-texto);
+    font-family: var(--fonte-destaque);
+}
+
+/* Descrição com fonte menor e cor acinzentada */
+.descricao {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Botão com gradiente */
+.botao {
+    background: linear-gradient(135deg, #8800bac9, #730054c1);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito de ampliação leve no botão */
+.botao:hover {
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: transform 0.2s ease; /* Suaviza a animação */
+    background: linear-gradient(135deg, #730054c1, #8800bac9); /* Inverte as cores no hover */
+}
